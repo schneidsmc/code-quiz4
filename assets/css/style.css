@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+:root {
+    --brightblue: #256eff;
+    --emerald: #3ddc97;
+    --cheeky: #e3655b;
+    --oxford: #161b33;
+    --tangerine: #f18806;
+    --white: #fcfcfc;
+}
+
+* {
+    box-sizing: borderbox;
+    margin: 0;
+    padding: 0;
+    font-family: "Michroma";
+}
+
+body{
+    background-color: var(--oxford);
+}
+
+h1 {
+    font-size: 55px;
+    font-weight:bold;
+    padding: 25px;
+    -webkit-text-stroke: 25px, --oxford;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container{
+ width: 100vh;
+ height: 60vh;
+ justify-content: center;
+ align-items: center;
+ max-width: 80rem;
+ background-color: var(--brightblue);
+ flex-direction: column;
+ display: flex;
+ margin: 0 auto;
+ padding: 0 auto;
+ text-align: center;
+ margin-top: 150px;
+ border-radius: 10px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: var(--emerald);
+    font-size: 25px;
+}
+
+.button:hover{
+    cursor:pointer;
+    box-shadow: 0 0.2rem 1.4rem 0 #3ddc97;
+    transition: transform 150ms;
+    transform: scale(1.04);
+}
