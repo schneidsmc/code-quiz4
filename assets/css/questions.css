@@ -1,0 +1,133 @@
+:root {
+    --brightblue: #256eff;
+    --emerald: #3ddc97;
+    --cheeky: #e3655b;
+    --oxford: #161b33;
+    --tangerine: #f18806;
+    --white: #fcfcfc;
+}
+
+* {
+    box-sizing: borderbox;
+    margin: 0;
+    padding: 0;
+    font-family: "Michroma";
+}
+
+body{
+    color: var(--oxford);
+
+}
+
+.timer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 40px;
+    font-weight:bolder;
+    color: var(--brightblue);
+    margin: 25px;
+}
+
+.score{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 40px;
+    font-weight:bolder;
+    color: var(--brightblue);
+    margin: 25px;
+}
+
+.a-container{
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    margin-top: 10px;
+    margin-left: 250px;
+    padding: 25 auto;
+}
+
+.q-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    background-color: var(--brightblue);
+    padding: 5px;
+}
+
+.c-container{
+    display: flex;
+    /* justify-content: center; */
+    width: 75%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-right: 250px;
+    margin-left: 25px;
+    font-size: 20px;
+    background-color: var(--brightblue);
+
+}
+
+.c-container:hover {
+    cursor:pointer;
+    box-shadow: 0 0.2rem 1.4rem 0 #3ddc97;
+    transition: transform 100ms;
+    transform: scale(1.02);
+}
+
+.c-prefix{
+    padding: 5px;
+}
+
+.c-text{
+    padding: 5px;
+    padding-left: 25px;
+    width: 75%;
+}
+
+.corect{
+    background-color: var(--emerald);
+}
+.incorrect{
+    background-color: var(--cheeky);
+}
+
+@media (max-width: 700px) {
+    .q-container{
+        width: 25vh;
+        height: auto;
+        min-width: 20rem;
+        font-size: 25px;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    .c-container{
+        width: 25vh;
+        height: auto;
+        min-width: 20rem;
+        font-size: 15px;
+        flex-direction: inline;
+        margin: 10px;
+
+    }
+    .a-container{
+        margin: 0 auto;
+        margin-left: 15px;
+        padding: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .c-text{
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    
+}

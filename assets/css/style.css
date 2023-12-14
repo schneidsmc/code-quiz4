@@ -70,3 +70,44 @@ footer{
     transition: transform 150ms;
     transform: scale(1.04);
 }
+
+@media (max-width: 700px) {
+    .container{
+        width: 70vh;
+        height: 20vh;
+        max-width: 40rem;
+        font-size: 25px;
+        flex-direction: row;
+
+    }
+h1{
+    font-size: 25px;
+}
+.button{
+    font-size: 15px;
+    display: inline-flex;
+    flex-direction:row;
+    padding: 3px;
+    margin: 2px;
+}
+    
+}
+
+@media (max-width: 500px) {
+    .container{
+        width: 25vh;
+        height: 45vh;
+        max-width: 40rem;
+        font-size: 25px;
+        flex-direction: column;
+
+    }
+    h1{
+        font-size: 20px;
+    }
+    .button{
+        font-size: 10px;
+        display: inline-flex;
+        flex-direction:row;
+    }
+}

@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/questions.css">
     <title>Code Quiz</title>
 </head>
 <body>
-    <header>Timer</header>
-    
-    
+    <header class ='timer'>Timer</header>
+    <main>
+        <div>
+            <p class ='score'>0</p>
+        </div>
+        <div class="a-container">
+            <div class="q-container">What is the question?</div>
+            <div class="c-container">
+                <p class="c-prefix">A</p>
+                <p class="c-text">Choice1</p>
+            </div>
+            <div class="c-container">
+                <p class="c-prefix">B</p>
+                <p class="c-text">Choice2</p>
+            </div>
+            <div class="c-container">
+                <p class="c-prefix">C</p>
+                <p class="c-text">Choice3</p>
+            </div>
+            <div class="c-container">
+                <p class="c-prefix">D</p>
+                <p class="c-text">Choice4</p>
+            </div>
+            <p class="right-wrong"></p>
+        </div>
+
+    </main>
+    <script> src="assets/js/questions.js" </script>
 </body>
 </html>
