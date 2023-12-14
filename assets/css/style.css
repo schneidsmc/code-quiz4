@@ -24,6 +24,7 @@ h1 {
     font-size: 55px;
     font-weight:bold;
     padding: 25px;
+    color: var(--oxford);
     -webkit-text-stroke: 25px, --oxford;
 }
 
@@ -60,6 +61,7 @@ footer{
     padding: 5px;
     margin-bottom: 10px;
     border-radius: 10px;
+    color:var(--oxford);
     background-color: var(--emerald);
     font-size: 25px;
 }
