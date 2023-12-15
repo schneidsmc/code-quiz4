@@ -16,7 +16,6 @@
 }
 h2{
     font-size: 55px;
-    text-align: center;
     font-weight:bold;
     padding: 25px;
     color: var(--emerald);
@@ -24,41 +23,26 @@ h2{
 }
 input{
     padding: 10px;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 15px;
-
 }
 
 .highscorepage{
-    justify-content: center;
     align-items: center;
-    align-content: center;
-    margin: 250px;
 }
 .finalscore{
     color:var(--emerald);
     padding: 10px;
-    text-align: center;
-    align-items: center;
     font-size: 40px;
 }
 .username{
     color:var(--emerald);
     padding: 10px;
-    text-align: center;
-    align-items: center;
     font-size: 40px;
 }
 
 .hs-button {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 5px;
-    margin-bottom: 30px;
     border-radius: 10px;
     color:var(--oxford);
     background-color: var(--emerald);
@@ -69,4 +53,9 @@ input{
     box-shadow: 0 0.2rem 1.4rem 0 #3ddc97;
     transition: transform 150ms;
     transform: scale(1.04);
+}
+body div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

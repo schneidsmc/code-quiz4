@@ -21,39 +21,32 @@ body{
 
 .timer{
     display:flex;
-    align-items: center;
     justify-content: center;
     border-radius: 4px;
     font-size: 40px;
     font-weight:bolder;
-    color: var(--brightblue);
+    color: var(--emerald);
     margin: 25px;
 }
 
 .score{
     display:flex;
-    align-items: center;
     justify-content: center;
     border-radius: 4px;
     font-size: 40px;
     font-weight:bolder;
-    color: var(--brightblue);
+    color: var(--emerald);
     margin: 25px;
 }
 
 .a-container{
-    justify-content: center;
-    align-items: center;
     margin: 100px;
-    margin-top: 10px;
     margin-left: 300px;
-    padding: 25 auto;
 }
 
 .q-container{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     width: 80%;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -64,8 +57,6 @@ body{
 
 .c-container{
     display: flex;
-    /* justify-content: center; */
-    width: 75%;
     border-radius: 4px;
     margin-bottom: 10px;
     margin-right: 250px;
@@ -89,7 +80,6 @@ body{
 .c-text{
     padding: 5px;
     padding-left: 25px;
-    width: 75%;
 }
 
 .corect{
@@ -99,28 +89,24 @@ body{
     background-color: var(--cheeky);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 962px) {
     .q-container{
-        width: 25vh;
         height: auto;
-        min-width: 20rem;
         font-size: 25px;
         flex-wrap: wrap;
         flex-direction: column;
-
     }
     .c-container{
-        width: 25vh;
+        width: 50vh;
         height: auto;
-        min-width: 20rem;
         font-size: 15px;
         flex-direction: inline;
-        margin: 10px;
+        margin: 10 auto;
 
     }
     .a-container{
         margin: 0 auto;
-        margin-left: 15px;
+        /* margin-left: 35px; */
         padding: 0 auto;
         justify-content: center;
         align-items: center;
