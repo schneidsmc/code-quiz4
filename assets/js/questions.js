@@ -60,9 +60,15 @@ const maxQuestion = 4
 
  // Timer begins when user clicks start game
  function startTimer() {
+  var timer = document.querySelector(".timer")
+  console.log(timer)
+  if (!timer) {
+    console.error("Element with id 'timer' not found");
+    return;
+    }
     var timeInterval = setInterval(function(){
       if (timeLeft >= 1) {
-        timer.textContent = timeLeft + ' seconds remaining'
+        timer.textContent = timeLeft + ''
       } else {
         clearInterval(timeInterval)
         return window.location.assign('/submit.html')
