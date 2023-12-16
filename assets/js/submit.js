@@ -1,8 +1,12 @@
-var finalScore = document.getElementsByClassName("finalscore")
-var username = document.getElementsByClassName("username")
-var submit = document.getElementById("submit")
+var finalScore = document.querySelector(".finalscore")
+var username = document.querySelector("username")
+var submit = document.querySelector("submit")
+var myScore = document.querySelector(".score")
 
 // Get user score from quiz and disply it in the .finalscore.value
+
+console.log(myScore)
+
 
 // Allow user to type in initals with the submit button disabled until values are typed in the input
 

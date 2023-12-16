@@ -1,9 +1,11 @@
-var timer = document.getElementsByClassName("timer")
-var scoreText = document.getElementsByClassName("score")
-var qcontainer = document.getElementsByClassName("q-container")
+var timer = document.querySelector(".timer")
+var scoreText = document.querySelector(".score")
+var qcontainer = document.querySelector(".q-container")
 var choices = Array.from(document.getElementsByClassName("c-text"))
-var result = document.getElementsByClassName("right-wrong")
+var result = document.querySelector(".right-wrong")
 
+
+var timeLeft = 60
 let currentQ = {}
 let userAnswer = true
 let score = 0
@@ -56,9 +58,22 @@ var questions = [
 const scorePoints = 100
 const maxQuestion = 4
 
+ // Timer begins when user clicks start game
+ function startTimer() {
+    var timeInterval = setInterval(function(){
+      if (timeLeft >= 1) {
+        timer.textContent = timeLeft + ' seconds remaining'
+      } else {
+        clearInterval(timeInterval)
+        return window.location.assign('/submit.html')
+      }
+      timeLeft--
+    }, 1000)
+ }
+
 // Function called startGame going through the methods of the code quiz
-  // Timer begins when user clicks start game
 function startGame() {
+  startTimer()
   questionCount = 0
   score = 0
   availQuestion = [...questions]
@@ -67,19 +82,22 @@ function startGame() {
 
 // Random question is displayed with corresponding four chcoices
 
+
 function getNewQuestion() {
+  result.textContent = ""
   if (availQuestion.length === 0 || questionCount > maxQuestion) {
     localStorage.setItem('finalScore', score)
     return window.location.assign('/submit.html')
   }
 
   const questionIndex = Math.floor(Math.random() * availQuestion.length)
-  currentQ = availQuestion[questionIndex]
-  qcontainer.innerText = currentQ.question
+  currentQ = questions[questionIndex]
+  qcontainer.textContent = currentQ.question
+  console.log(currentQ.question)
 
   choices.forEach(choice => {
     const number = choice.dataset['number']
-    choice.innerText = currentQ['choice' + number]
+    choice.textContent = currentQ['choice' + number]
   })
   availQuestion.splice(questionIndex, 1)
 
@@ -99,7 +117,15 @@ choices.forEach(choices => {
 
       if(classToApply === 'correct') {
       incrementScore(scorePoints)
+      result.setAttribute('class', "correct")
+      result.textContent = 'Right!'
       }
+
+      if(classToApply === 'incorrect') {
+        result.setAttribute('class', "incorrect")
+        result.textContent = 'Wrong!'
+        timeLeft-=5
+        }
 
       selectedChoice.parentElement.classList.add(classToApply)
 
@@ -113,7 +139,8 @@ choices.forEach(choices => {
 // When answer is correct, score is increased by 100
 incrementScore = num => {
   score += num
-  scoreText.innerText = score
+  scoreText.textContent = score
+  console.log(score)
 }
 
 // Call game to function

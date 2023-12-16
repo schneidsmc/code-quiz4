@@ -83,10 +83,10 @@ body{
 }
 
 .correct{
-    background-color: var(--emerald);
+    color: var(--emerald);
 }
 .incorrect{
-    background-color: var(--cheeky);
+    color: var(--cheeky);
 }
 
 @media (max-width: 962px) {
