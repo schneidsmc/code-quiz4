@@ -13,9 +13,6 @@ As a result, the coding quiz will have the following attributes:
 ## Wireframing
 - There are going to be four separate pages of this quiz. Each will have it's own HTML page. See below. 
 
-<img src="./assets/Images/WF-codequiz-startpage.png" alt="Start Page" width="300" height="auto">
-<img src="./assets/Images/WF-codequiz-questionpage.png" alt="Question Page" width="300" height="auto">
-<img src="./assets/Images/WF-codequiz-score&submit.png" alt="Score & Submit" width="300" height="auto">
-<img src="./assets/Images/WF-codequiz-highscorepage.png" alt="High Score Page" width="300" height="auto">
+<img src="./assets/Images/WF-codequiz-startpage.png" alt="Start Page" width="300" height="auto"> <img src="./assets/Images/WF-codequiz-questionpage.png" alt="Question Page" width="300" height="auto"> <img src="./assets/Images/WF-codequiz-score&submit.png" alt="Score & Submit" width="300" height="auto"> <img src="./assets/Images/WF-codequiz-highscorepage.png" alt="High Score Page" width="300" height="auto">
 
 ## HTML
