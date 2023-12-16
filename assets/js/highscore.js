@@ -1,6 +1,6 @@
 var user = document.getElementsByClassName("s-text")
 var home = document.getElementsByClassName("gohome")
-
+var highScoreList = JSON.parse(localStorage.getItem('highScores')) || []
 // Get high scores from local storage
 
 // Apply those scores and corresponding initals to the innerhtml text

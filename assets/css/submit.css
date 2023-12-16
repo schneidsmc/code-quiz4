@@ -29,7 +29,7 @@ input{
 .highscorepage{
     align-items: center;
 }
-.finalscore{
+.finalScore{
     color:var(--emerald);
     padding: 10px;
     font-size: 40px;
