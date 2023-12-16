@@ -16,3 +16,11 @@ As a result, the coding quiz will have the following attributes:
 <img src="./assets/Images/WF-codequiz-startpage.png" alt="Start Page" width="300" height="auto"> <img src="./assets/Images/WF-codequiz-questionpage.png" alt="Question Page" width="300" height="auto"> <img src="./assets/Images/WF-codequiz-score&submit.png" alt="Score & Submit" width="300" height="auto"> <img src="./assets/Images/WF-codequiz-highscorepage.png" alt="High Score Page" width="300" height="auto">
 
 ## HTML
+
+- Four HTML pages created. The index.html page has the welcome message along with a button to start game and a button to view the highscores. The questions.html page has placeholders for all the functions that will be written in javascript. There is a div & class for the timer, score, question, choices and right/wrong. The submit.html displays the most recent score, an input box for the users initials and a submit button. The highscore.html page has placeholders for the top three scores as well as a button to take you back to the welcome page.
+
+## CSS
+- CSS was created for each of the HTML pages. Almost all of it was kept consistent throughout the four pages of HTML. 
+
+## Javascript
+- There are four pages of javascript. This probably could have been combined on some of the pages but for learning purposed I kept them seperate. The script.js page has a button that takes you to the questions page and a button that takes you to the highscore page. The questions.js has the most javascript written. Variables are declared at the top of the document as well as 'let' tag lines. These are only accessible in the specific statement where they are defined. The variable for the questions and choices with the correct choice are saved here. This is communicated through a dataset linked in the html. 
