@@ -1,12 +1,12 @@
-var finalScore = document.querySelector(".finalscore")
+var mostRecentScoreScore = document.querySelector(".finalscore")
 var username = document.querySelector(".username")
-var submit = document.querySelector(".submit")
-
-const highScoreList = JSON.parse(localStorage.getItem('finalScore')) || []
+var submit = document.querySelector("#submit")
+var initals = document.querySelector('#initials')
+// const highScoreList = JSON.parse(localStorage.getItem('finalScore')) || []
 const maxHsList = 3
-console.log(highScoreList)
 
-// Get user score from quiz and disply it in the .finalscore.value
+
+// Get user score from quiz and disply it in the .finalscore
 
 listScore();
 
@@ -16,46 +16,31 @@ function listScore() {
     if (finalScore !== null){
         document.querySelector('.finalScore').textContent = 'Score: ' + finalScore
     }
+
 }
 
-// finalScore.textContent = mostRecentScore
+submit.addEventListener("click", function(event) {
+    event.preventDefault();
+    var mostRecentScoreScore = JSON.parse(localStorage.getItem("finalScore"))
 
-username.addEventListener('keyup', () => {
-    submit.disabled = !username.value
+    var scoreList = JSON.parse(localStorage.getItem("userScore")) || [];
+   
+    var userScore = {
+      username: initials.value,
+      score: mostRecentScoreScore
+    };
+    
+    scoreList.push(userScore);
 
-})
+    localStorage.setItem("userScore", JSON.stringify(scoreList));
+    console.log(userScore)
+    console.log(scoreList)
 
-saveList = e => {
-    e.preventDefault()
+    window.location.href = "highscore.html";
 
-    const score = {
-        score: mostRecentScore,
-        name: username.value
-    }
+})    
 
-    highScores.push('score')
 
-    highScores.sort((a,b) => {
-        return b.score = a.score
-
-    })
-
-    highScores.splice(3)
-
-    localStorage.setItem('highScores', JSON.stringify(highScores))
-    window.location.assign('/')
-}
-
-// function userName() {
-//     submit.addEventListener('click', e => {
-//         if(!userAnswer) return
-//     })
-//     const hsList = ('username', 'finalScore')
-//     if (username !== null) {
-//         localStorage.setItem('username', username)
-//     }
-//     console.log(username)
-// }
 
 
 // Allow user to type in initals with the submit button disabled until values are typed in the input
@@ -66,19 +51,3 @@ saveList = e => {
 
 // Clicking submit automatically takes the user to the highscore.html page
 
-
-
-// const hsList = JSON.parse(localStorage.getItem('finalScore')) || []
-// const maxHsList = 3
-// console.log(finalScore)
-
-saveList = e => {
-    e.preventDefault()
-
-    const score = {
-        score: mostRecentScore,
-        name: username.value
-    }
-
-    highscores.push('score')
-}

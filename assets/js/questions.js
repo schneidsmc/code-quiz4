@@ -56,7 +56,7 @@ var questions = [
 ];
 
 const scorePoints = 100
-const maxQuestion = 4
+const maxQuestion = 5
 
  // Timer begins when user clicks start game
  function startTimer() {
@@ -159,6 +159,6 @@ startGame()
 // subtracts 5 secs from timer and goes to the next question
   // A hidden display appears showing 'Wrong!' at the bottom
 
-// After all the questions have been dispayed the final score is stored in the local storage
+// the final score is stored in the local storage
 
 // User is then taken to the submit.html page
