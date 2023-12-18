@@ -71,7 +71,7 @@ const maxQuestion = 5
         timer.textContent = timeLeft + ''
       } else {
         clearInterval(timeInterval)
-        return window.location.assign('./submit.html')
+        return window.location.assign('submit.html')
       }
       timeLeft--
     }, 1000)
@@ -93,7 +93,7 @@ function getNewQuestion() {
   result.textContent = ""
   if (availQuestion.length === 0 || questionCount > maxQuestion) {
     localStorage.setItem('finalScore', score)
-    return window.location.assign('/submit.html')
+    return window.location.assign('submit.html')
   }
 
   const questionIndex = Math.floor(Math.random() * availQuestion.length)
