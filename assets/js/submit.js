@@ -22,7 +22,7 @@ function listScore() {
 submit.addEventListener("click", function(event) {
     event.preventDefault();
     var mostRecentScoreScore = JSON.parse(localStorage.getItem("finalScore"))
-
+    
     var scoreList = JSON.parse(localStorage.getItem("userScore")) || [];
    
     var userScore = {
@@ -35,13 +35,11 @@ submit.addEventListener("click", function(event) {
     localStorage.setItem("userScore", JSON.stringify(scoreList));
     console.log(userScore)
     console.log(scoreList)
-
+    
     window.location.href = "highscore.html";
-
+    
 })    
-
-
-
+console.log(scoreList)
 
 // Allow user to type in initals with the submit button disabled until values are typed in the input
 
