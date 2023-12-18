@@ -15,11 +15,11 @@ let availQuestion = []
 var questions = [
   {
     question: 'Commonly used data types DO NOT include:',
-    choice1:'strings', 
+    choice1:'alerts', 
     choice2: 'booleans', 
-    choice3: 'alerts', 
+    choice3: 'strings', 
     choice4: 'numbers',
-    answer: 3,
+    answer: 1,
   },
   {
     question: 'The condition in an if / else statement is enclosed within ____.',
@@ -40,10 +40,10 @@ var questions = [
   {
     question: 'String values must be enclosed within ____ when being assigned to variables.',
     choice1: 'commas', 
-    choice2: 'curly brackets',
-    choice3: 'quotes',
+    choice2: 'quotes',
+    choice3: 'curly bracket',
     choice4: 'parentheses',
-    answer: 3,
+    answer: 2,
   },
   {
     question: 'A very useful tool used during development and debugging for printing content to the debugger is:',

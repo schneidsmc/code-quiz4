@@ -11,6 +11,10 @@ console.log(highScoreList)
 clearBtn.addEventListener('click', function clearLocalStorage() {
     localStorage.clear();
     renderList();
+    clearList()
+    function clearList(){
+        hsListContainer.textContent = ' '
+    }
   })
  
 home.addEventListener('click', function gohome() {

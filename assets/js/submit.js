@@ -34,12 +34,11 @@ submit.addEventListener("click", function(event) {
 
     localStorage.setItem("userScore", JSON.stringify(scoreList));
     console.log(userScore)
-    console.log(scoreList)
-    
+
     window.location.href = "highscore.html";
     
 })    
-console.log(scoreList)
+
 
 // Allow user to type in initals with the submit button disabled until values are typed in the input
 
