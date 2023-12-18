@@ -30,7 +30,7 @@ input{
     align-items: center;
 }
 .finalScore{
-    color:var(--emerald);
+    color:var(--tangerine);
     padding: 10px;
     font-size: 40px;
 }
