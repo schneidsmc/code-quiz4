@@ -15,7 +15,7 @@ let availQuestion = []
 var questions = [
   {
     question: 'Commonly used data types DO NOT include:',
-    choice1:'alerts', 
+    choice1: 'alerts', 
     choice2: 'booleans', 
     choice3: 'strings', 
     choice4: 'numbers',
@@ -158,7 +158,5 @@ startGame()
 
 // subtracts 5 secs from timer and goes to the next question
   // A hidden display appears showing 'Wrong!' at the bottom
-
-// the final score is stored in the local storage
-
+  
 // User is then taken to the submit.html page

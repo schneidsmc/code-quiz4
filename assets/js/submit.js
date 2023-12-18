@@ -2,8 +2,8 @@ var mostRecentScoreScore = document.querySelector(".finalscore")
 var username = document.querySelector(".username")
 var submit = document.querySelector("#submit")
 var initals = document.querySelector('#initials')
-// const highScoreList = JSON.parse(localStorage.getItem('finalScore')) || []
-const maxHsList = 3
+
+const maxHsList = 5
 
 
 // Get user score from quiz and disply it in the .finalscore
