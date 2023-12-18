@@ -25,7 +25,7 @@ var questions = [
     question: 'The condition in an if / else statement is enclosed within ____.',
     choice1: 'quotes', 
     choice2: 'curly brackets', 
-    choice3: 'parentheses', 
+    choice3: 'parenthesis', 
     choice4: 'square brackets',
     answer: 3,
   },
@@ -42,7 +42,7 @@ var questions = [
     choice1: 'commas', 
     choice2: 'quotes',
     choice3: 'curly bracket',
-    choice4: 'parentheses',
+    choice4: 'parenthesis',
     answer: 2,
   },
   {
