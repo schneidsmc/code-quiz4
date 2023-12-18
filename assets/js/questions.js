@@ -71,7 +71,7 @@ const maxQuestion = 5
         timer.textContent = timeLeft + ''
       } else {
         clearInterval(timeInterval)
-        return window.location.assign('/submit.html')
+        return window.location.assign('./submit.html')
       }
       timeLeft--
     }, 1000)
